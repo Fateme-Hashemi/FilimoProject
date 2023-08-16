@@ -1,0 +1,138 @@
+
+
+.col {
+    width: 412px;
+    height: 40px;
+    /* justify: space-between; */
+    margin: 20px 15px;
+    display: flex;
+    
+    }
+    
+    .col span {
+    margin-right: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: rgba(232, 232, 232, 1);
+    
+    }
+    
+    .col div {
+        margin: 10px;
+    }
+    
+    
+    .inputcontainer {
+      
+        height: 136px;
+        top: 0;
+        
+    }
+    
+    .innerInputContainer {
+        width: Fill (428px);
+        height: Hug (48px);
+        padding: 12px;
+        border-radius: 8px;
+        border: 1px;
+        gap: 12px;
+        color: rgba(232, 232, 232, 1);
+        display: flex;
+        justify-content: space-around;
+    }
+    .catMainContainer {
+    position: relative;
+    width: Fill (428px);
+    
+    }
+
+
+    .catContainer {
+        width: 435px;
+        height:80px;
+        padding: 12px;
+        border-radius: 8px;
+        border: 1px;
+        background: linear-gradient(0deg, #1E1E1E, #1E1E1E),
+        linear-gradient(0deg, #282828, #282828);
+        border: 1px solid rgba(40, 40, 40, 1);
+        box-shadow: 0px 16px 48px 0px rgba(0, 0, 0, 0.5);
+        display: none;
+      
+        }
+
+
+        .catContainerVisible {
+            display: flex;
+            top: 0;
+            position: absolute;
+            top: 70px;
+            right: 4px;
+            transition: transform 0.3s ease-in-out;
+        }
+        
+    .catContainer input {
+     
+        margin: 5px 2px;
+        margin-right: 30px;
+     
+    }
+    .catContainer input{
+    width: 15px;
+    height: 15px;
+    top: 2px;
+    left: 2px;
+    
+    }
+
+    .catContainer input[type="checkbox"]::before {
+        width: 15px;
+        height: 15px;
+        top: 2px;
+        left: 2px;
+        background: rgba(161, 161, 161, 1);
+    }
+    
+    .catContainer input[type="checkbox"]:checked::before {
+        background-color: rgba(245, 184, 63, 1);
+      }
+      
+    
+    
+    
+    .innerInputContainer .input {
+        width: 428px;
+        height: Hug (48px);
+        padding: 12px;
+        border-radius: 8px;
+        border: 1px;
+        gap: 12px;
+        background: transparent;
+        border: 1px solid #FFFFFF80 ;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .catContainer span {
+        
+        width: 376px;
+        height: 24px;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: right;
+        color: rgba(232, 232, 232, 1);
+    
+    }
+    
+    .input {
+        position: relative;
+    }
+    
+
+
+    

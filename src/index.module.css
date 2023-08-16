@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+    
+}
+
+@font-face {
+    font-family: 'IranSans';
+    src: local('IranSans'), url(./fonts/bc44a2635942ecc276e48e7215fc678a.ttf) format('truetype');
+  }
+
+  body {
+    font-family: IranSans;
+    direction: rtl;
+  }
