@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import queryString from 'query-string';
-import { useHistory, useLocation } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 //style
 import styles from "../styles/Home.module.css";
 
@@ -25,7 +24,7 @@ const Home = ({ handleChange }) => {
     const [selectedAscending, setSelectedAscending] = useState(false);
 
 
-
+    //keep Filters And Sort after refresh
     useEffect(() => {
         const storedGenre = localStorage.getItem('selectedGenre');
         const storedRating = localStorage.getItem('selectedRating');
@@ -52,7 +51,7 @@ const Home = ({ handleChange }) => {
           queryParams.set('selectedGenre', selectedGenre.join(','));
         }
       
-        if (selectedRating !== null) {
+        if (selectedRating !== null) {//if the selectedRating value is not null
           if (selectedAscending) {
             queryParams.set('sorts[rating]', 'asc');
           } else {
@@ -61,9 +60,10 @@ const Home = ({ handleChange }) => {
         }
       
         const queryString = queryParams.toString();
-      
-        if (queryString) {
-          history.push({ search: queryString });
+     
+        if (queryString) {//If it is not empty,
+          history.push({ search: queryString }); 
+         
         } else {
           history.push({ search: '' }); // This line removes the query string
         }
@@ -90,13 +90,6 @@ const Home = ({ handleChange }) => {
       setSelectedRating(value === selectedRating ? null : value);
     };
     
-
-    //highestSorting
-      const handleAscendingChange = (value) => {
-        setSelectedAscending(value);
-      };
-
-
  //filteringAndSorting
     const filterMovies = movieData
     .filter(
@@ -122,7 +115,8 @@ const Home = ({ handleChange }) => {
 
             <div className={styles.container}>
                 
-                <img className={styles.banner} src={banner} />
+                <img className={styles.banner} src={banner} alt="img alt" />
+                
                 <div className={styles.filtercontainer}>
 
                   <div >

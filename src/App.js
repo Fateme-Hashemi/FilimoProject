@@ -7,12 +7,6 @@ import Home from './components/Home';
 import Cards from './components/Cards';
 
 
-
-//data
-import movieData from "./data/data.json";
-
-
-
 const App = () => {
 
 

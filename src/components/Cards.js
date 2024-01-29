@@ -1,12 +1,9 @@
-import React, { createContext, useState, useEffect } from "react";
 //style 
 import styles from "../styles/Card.module.css";
 
 //img 
 import like from "../img/like.png";
 
-//data
-import movieCard from "../data/data.json";
 
 
 
@@ -22,13 +19,13 @@ const Cards = ({selectedGenre, selectedRating, selectedAscending, movies}) => {
         </div>
         <div className={styles.cardmainContainer}>
           <div className={styles.cardcontainer}>
-            { movies.slice(0, 18).map((card, key) => {
+            { movies?.map((card, key) => {
                 return (
                   <div className={styles.boxcontainer} key={key}>
                     <div className={styles.box}>
                       <div>
                         <img
-                          src={card.pic.movie_img_s}
+                          src={card?.pic?.movie_img_s || card?.pic?.movie_img_m || card?.pic?.movie_img_b}
                           alt="MoviePic"
                         />
                       </div>
@@ -46,6 +43,7 @@ const Cards = ({selectedGenre, selectedRating, selectedAscending, movies}) => {
                             <img
                               src={like}
                               style={{ width: "16px", height: "16px" }}
+                              alt="MoviePic"
                             />
                             {card.avg_rate_label}
                           </span>

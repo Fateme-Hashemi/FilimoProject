@@ -19,7 +19,7 @@ const Rate = ({selectedRating, onRatingChange}) => {
               
                     <div className={styles.input}  onClick={() => setIcon(!icon)} >
                         <span> امتیاز فیلم</span>
-                        {icon ? <img src={arrowup} /> : <img src={arrowdown} />}
+                        {icon ? <img src={arrowup} alt="img alt" /> : <img src={arrowdown} alt="img alt" />}
                     </div>
                 </div>
             </div>

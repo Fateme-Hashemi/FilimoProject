@@ -19,28 +19,28 @@ const Landing = () => {
     return (
         <>
         <div className={styles.container}>
-            <img className={styles.banner} src={banner} />
+            <img className={styles.banner} src={banner} alt="img alt" />
 
 
             <div className={styles.contentContainer}>
              <div className={styles.filimoContainer}>
-             <img src={filimo} className={styles.filimopic}  />
+             <img src={filimo} className={styles.filimopic} alt='img alt'  />
              </div>
                 <div className={styles.textContainer}>
-                    <img src={star1} />
-                    <img src={star2} />
-                    <img src={star3} />
+                    <img src={star1} alt="img alt" />
+                    <img src={star2} alt="img alt" />
+                    <img src={star3} alt="img alt" />
                     <p className={styles.text}>
                     به دنیای هزاران فیلم و سریال ایرانی و خارجی خوش اومدی
                     </p>
-                    <img src={star3} />
-                    <img src={star2} />
-                    <img src={star1} />
+                    <img src={star3} alt="img alt" />
+                    <img src={star2} alt="img alt" />
+                    <img src={star1} alt="img alt" />
                 </div>
 
                 <button className={styles.btn}>
                     <Link to="/home"> گشتی در فیلیمو</Link>        
-                    <img src={arrow} />        
+                    <img src={arrow} alt="img alt" />        
                 </button>
             </div>
 
